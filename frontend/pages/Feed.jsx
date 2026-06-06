@@ -224,17 +224,18 @@ function Feed() {
               </Typography>
 
               {post.image && (
-                <img
-                  src={`https://social-feed-backend-6po4.onrender.com/uploads/`}
-                  alt="post"
-                  style={{
-                    width: "100%",
-                    maxHeight: "400px",
-                    objectFit: "cover",
-                    borderRadius: "10px",
-                  }}
-                />
-              )}
+  <img
+    src={`https://social-feed-backend-6po4.onrender.com/uploads/${post.image}`}
+    alt="post"
+    style={{
+      width: "100%",
+      borderRadius: "10px",
+      marginTop: "10px",
+      maxHeight: "400px",
+      objectFit: "cover",
+    }}
+  />
+)}
 
               <Box mt={2} display="flex" gap={2}>
                 <Button
