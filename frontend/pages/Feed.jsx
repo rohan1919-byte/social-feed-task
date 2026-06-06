@@ -225,7 +225,7 @@ function Feed() {
 
               {post.image && (
                 <img
-                  src={`http://localhost:5000/uploads/${post.image}`}
+                  src={`https://social-feed-backend-6po4.onrender.com/uploads/`}
                   alt="post"
                   style={{
                     width: "100%",
