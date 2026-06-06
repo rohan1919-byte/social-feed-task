@@ -34,8 +34,16 @@ router.post(
 
       res.status(201).json(post);
     } catch (err) {
-      res.status(500).json(err);
-    }
+
+  console.error(
+    "CREATE POST ERROR:",
+    err
+  );
+
+  res.status(500).json({
+    message: err.message,
+  });
+}
   }
 );
 
